@@ -1,5 +1,5 @@
 class AddOnlywomanToEvent < ActiveRecord::Migration[6.1]
   def change
-    add_column :events, :only_woman, :integer, default: 0, null: false
+    add_column :events, :only_woman, :boolean, default: false, null: false
   end
 end
